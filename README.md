@@ -12,5 +12,28 @@ Foram criados dois repositórios, um para o backend e outro para o frontend. Voc
 
 <img width="753" height="335" alt="image" src="https://github.com/user-attachments/assets/ce2981ce-ffbb-4bf3-90e8-cb27cb1d68e2" />
 
+## Rodando a aplicação localmente
+
+Com o servidor rodando ( ver o repositório https://github.com/aasjr/trade-desk-backend) abrir o arquivo "/src/index.html".
+
+## Como executar através do Docker
+
+Certifique-se de ter o Docker instalado e em execução em sua máquina.
+
+Navegue até o diretório que contém o Dockerfile no terminal e seus arquivos de aplicação e Execute como administrador o seguinte comando para construir a imagem Docker:
+
+```bash
+$ docker build -t frontend .
+```
+
+Uma vez criada a imagem, para executar o container basta executar, como administrador, seguinte o comando:
+``` bash
+$ docker run -d -p 8080:80 frontend
+```
+
+Uma vez executando, para acessar o front-end, basta abrir o http://localhost:8080/#/ no navegador.
+
+
+
 
 
